@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <style>
+    /* Ensure bullets are shown for unordered lists */
+    ul {
+      list-style-type: disc; /* Set bullet points */
+      margin-left: 20px; /* Add some left margin for better visibility */
+    }
+    
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
+      padding: 20px;
+    }
+    
+    .profile {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .section {
+      margin-bottom: 20px;
+    }
+    
+    h2 {
+      color: #007bff;
+      border-bottom: 1px solid #007bff;
+      padding-bottom: 5px;
+    }
+    
+    /* Make sure lists are visible even inside sections */
+    ul {
+      list-style: disc; /* Reapply bullet points if removed by any default styles */
+      padding-left: 20px; /* Indent the list */
+    }
+    
+    li {
+      margin-bottom: 5px; /* Add some space between bullet points */
+    }
+    
+    @media screen and (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="profile">
+    <img src="vivek.jpg" alt="Profile Photo" style="width: 150px; height: 150px; border-radius: 50%;">
+    <div>
+      <h1>Vivek Reddy Kesavarapu</h1>
+      <p><strong>Location:</strong> Ongole, India</p>
+      <p><strong>Website:</strong> <a href="https://vivek76.vercel.app">vivek76.vercel.app</a></p>
+      <p><strong>Email:</strong> <a href="mailto:vivekreddykesavarapu@gmail.com">vivekreddykesavarapu@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/vivek76">linkedin.com/in/vivek76</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/truly-vivek">github.com/truly-vivek</a></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Column 1 -->
+    <div>
+      <section class="section">
+        <h2>Education</h2>
+        <p><strong>Seshadri Rao Gudlavalleru Engineering College</strong><br>B.Tech in Information Technology<br>2020 - 2024 | Gudlavalleru, India<br>CGPA: 8.48</p>
+        <p><strong>Sri Pratibha Junior College</strong><br>Intermediate - MPC<br>2018 - 2020 | Ongole, India<br>Percentage: 95.5%</p>
+      </section>
+
+      <section class="section">
+        <h2>Skills</h2>
+        <ul>
+          <li>Programming: Python, C Language, Java</li>
+          <li>Data Science: NumPy, Pandas, Matplotlib</li>
+          <li>Database: MySQL</li>
+          <li>Tools: Git, GitHub, VS Code, Google Colaboratory</li>
+          <li>AI Tools: ChatGPT, Gemini, GenAI, Copilot</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Certifications</h2>
+        <ul>
+          <li>Programming Essentials in C | Cisco</li>
+          <li>Joy of Computing Using Python | NPTEL</li>
+          <li>CS50 Certification | Harvard</li>
+          <li>Google Digital Marketing Certification</li>
+          <li>Python MPC Course | GUVI</li>
+          <li>Azure Developer Associate AZ-204 | Microsoft</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Achievements</h2>
+        <ul>
+          <li>Chairperson for ACM SRGEC Student Chapter in BTech for one year</li>
+          <li>Class Representative for one year in BTech</li>
+          <li>Academic Topper in Intermediate 1st Year (11th Standard)</li>
+          <li>Academic Topper in 10th standard (SSC)</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Column 2 -->
+    <div>
+      <section class="section">
+        <h2>Experience</h2>
+        <p><strong>SmartInternz</strong><br>ML & DL Externship<br>Jan 2023 - June 2023</p>
+        <ul>
+          <li>Collaborated with a team of four to develop and fine-tune a deep learning model for accurate age and gender prediction from images and achieved 93% accuracy.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Projects</h2>
+        <p><strong>Speech to Sign Language Conversion Website</strong><br>NLP | Deep Learning | Python | SQLite<br>Jan 2024</p>
+        <ul>
+          <li>Developed a real-time web application using NLP, implemented the backend with Python and an SQLite3 database, and leveraged a dataset of over 2,000 GIFs to achieve a 92% translation accuracy rate.</li>
+        </ul>
+        <p><strong>Age and Gender Prediction</strong><br>CNN | Python | OpenCV | TensorFlow | Machine Learning<br>May 2023</p>
+        <ul>
+          <li>Integrated OpenCV for real-time image processing and TensorFlow to train the CNN model on a dataset of 26,580 images, achieving an accuracy rate of 91% on age prediction and 94% on gender classification.</li>
+        </ul>
+        <p><strong>My Portfolio Website</strong><br>HTML | CSS | JavaScript | EmailJS | AI-ChatBot<br>Aug 2023</p>
+        <ul>
+          <li>Integrated an AI chatbot, trained with portfolio data, and managed up to 100 chats per month, including contact form using EmailJS for notifications.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Workshops</h2>
+        <ul>
+          <li>Created fully operational line follower and voice-controlled robots during an Ardubotics Robotics workshop at VIT.</li>
+          <li>Merit Certificate in Ethical Hacking workshop and ranked top 5, organized by Indian Servers at SRGEC.</li>
+          <li>Completed 5 levels in drone flying challenge during a workshop on Drone Technology at SRGEC.</li>
+          <li>Participated in 2D game design workshop using Buildbox by APSSDC.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Publications</h2>
+        <ul>
+          <li>K. Vaishnavi, M. F. Akbar, T. Balaji, K. V. Reddy, and M. S. Rani, "A Natural Language Processing Approach to the Translation of Speech into Indian Sign Language," 2024 International Conference on Distributed Computing and Optimization Techniques (ICDCOT), Bengaluru, India, 2024. <a href="https://doi.org/10.1109/ICDCOT61034.2024.10515806">Link</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
