@@ -16,7 +16,20 @@
             line-height: 1.6;
             background-color: #f4f4f4;
             color: #333;
+transition: background-color 0.3s, color 0.3s;
         }
+
+
+
+
+ /* Dark mode styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+
+
 
         /* Main container for layout */
         .container {
@@ -67,13 +80,27 @@
             background-color: #fff;
             padding: 20px;
             border-radius: 10px;
+transition: background-color 0.3s, color 0.3s;
         }
 
         .right-column {
             background-color: #fff;
             padding: 20px;
             border-radius: 10px;
+transition: background-color 0.3s, color 0.3s;
         }
+
+
+
+
+ /* Dark mode for containers */
+        body.dark-mode .left-column,
+        body.dark-mode .right-column,
+        body.dark-mode footer {
+            background-color: #1e1e1e;
+        }
+
+
 
         h2 {
             color: #0073b1;
@@ -138,6 +165,7 @@ ol.publication-list li::before {
             padding: 10px;
             background-color: #fff;
             border-radius: 10px;
+transition: background-color 0.3s, color 0.3s;
         }
 
         footer p {
@@ -146,8 +174,7 @@ ol.publication-list li::before {
             color: #666;
         }
 
-
-        footer a {
+footer a {
             text-decoration: none;
             color: #666666;
         }
@@ -156,6 +183,16 @@ footer a:hover {
             text-decoration: none;
             color: #005582;
         }
+
+
+
+
+ /* Dark mode for text colors */
+        body.dark-mode footer p, body.dark-mode footer a {
+            color: #999;
+        }
+
+
 
 
         /* For smaller screens */
@@ -201,12 +238,37 @@ footer a:hover {
 
 
 
+
+
+   /* Dark mode toggle button */
+        .dark-mode-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #0073b1;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .dark-mode-toggle:hover {
+            background-color: #005582;
+        }
+
+
+
     </style>
 </head>
 
 <body>
 
     <header>
+
+<button class="dark-mode-toggle" id="darkModeToggle">🌙 Dark Mode</button>
+
         <div class="header-container">
             <img src="vivek.jpg" alt="Vivek Reddy Kesavarapu" class="profile-photo">
             <div>
@@ -327,6 +389,32 @@ footer a:hover {
     <footer>
         <p>&copy; 2024 <a href="https://github.com/truly-vivek/e-Resume?tab=MIT-1-ov-file#readme"><strong>Vivek Reddy Kesavarapu</strong></a>. All rights reserved.</p>
     </footer>
+
+
+<script>
+        const toggleButton = document.getElementById('darkModeToggle');
+        const currentTheme = localStorage.getItem('theme');
+
+        if (currentTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            toggleButton.textContent = '☀️ Light Mode';
+        }
+
+        toggleButton.addEventListener('click', function () {
+            document.body.classList.toggle('dark-mode');
+            const isDarkMode = document.body.classList.contains('dark-mode');
+
+            if (isDarkMode) {
+                localStorage.setItem('theme', 'dark');
+                toggleButton.textContent = '☀️ Light Mode';
+            } else {
+                localStorage.setItem('theme', 'light');
+                toggleButton.textContent = '🌙 Dark Mode';
+            }
+        });
+    </script>
+
+
 
 </body>
 
