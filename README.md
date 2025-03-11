@@ -1,7 +1,7 @@
 # e-Resume
 
 
-This is the personal online resume for **Vivek**, a B.Tech graduate in Information Technology with experience in Artificial Intelligence, Machine Learning, and Web Development.
+This is the personal online resume for **Vivek**.
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -13,7 +13,7 @@ This is the personal online resume for **Vivek**, a B.Tech graduate in Informati
 
 ## Introduction
 
-This repository contains the source code for the e-Resume of **Vivek Reddy Kesavarapu**. It showcases his educational background, technical skills, experience, projects, achievements, and certifications. The website is developed using HTML, CSS, and JavaScript, with a focus on responsiveness and clarity.
+This repository contains the source code for the e-Resume of **mine**. It showcases his educational background, technical skills, experience, projects, achievements, and certifications. The website is developed using HTML, CSS, and JavaScript, with a focus on responsiveness and clarity.
 
 You can visit the live version of the resume at: [e-Resume](https://truly-vivek.github.io/e-Resume/)
 
@@ -83,6 +83,6 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 ## Copyright
 
-&copy; 2024 Vivek Reddy Kesavarapu. All rights reserved.
+&copy; 2024 Vivek. All rights reserved.
 
 Permission is granted to use this resume template for personal use, but it may not be reproduced, distributed, or used for any commercial purposes without explicit permission from the author.
